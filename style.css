@@ -1,0 +1,60 @@
+/* box-sing limite la hauteur du body à 100% */
+* {
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(250, 229, 229);
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    font-size: 5rem;
+    color:rgb(124, 16, 16);
+    white-space: normal;
+}
+
+h2 { 
+    font-size: 2.5rem;
+    margin: 100px;
+    color:rgba(124, 16, 16, 0.692);
+}
+
+/* Contenu du jeu */
+#gameBoard {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-grow: 1;
+    
+}
+
+/* Grille de jeu */
+#grid {
+    display: inline-block;
+    background-color: rgb(192, 129, 46);
+    margin: 0 auto;
+    padding: 10px;
+    margin-bottom: 100px;
+}
+
+/* Sélection de toutes les div qui se trouvent dans la grille */
+#grid div {
+    margin: 0 auto;
+}
+
+/* Sélection des boutons qui font office de case pour la grille */
+#grid button {
+    width: 100px;
+    height: 100px;
+    font-weight: bold;
+    font-size: 50px;
+    margin: 10px;
+}
+
+#footer {
+    font-size: 3rem;
+    font-weight: bold;
+    color:rgb(124, 16, 16);
+}
